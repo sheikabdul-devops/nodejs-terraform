@@ -9,11 +9,11 @@ Step 3 : Enter required input variables in terraform.tfvars file.
 Step 4 : Run "terrafrom init"
 Step 5 : Run "terrafrom plan -out=tfplan"
 Step 6 : Run terrafrom apply "tfplan"
-
-Please make sure that all componenets are created. Now you are able to access the below url
+Step 7 : "terraform output elb_address" to get ELB DNS name
+Step 8 : Please make sure that all componenets are created. Now you are able to access the below url
 
 http://<AWS ELB DNS name>/devices
 
-Records can be updated , deleted and added using PUT/DELETE/POST methods.
+Note : Records can be updated , deleted and added using PUT/DELETE/POST methods.
 
  

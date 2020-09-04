@@ -64,3 +64,6 @@ output "elb_id" {
   value = [aws_elb.myapp.id]
 }
 
+output "elb_address" {
+  value = aws_elb.myapp.public_dns
+}
