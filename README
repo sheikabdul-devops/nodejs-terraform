@@ -1,0 +1,19 @@
+This is a Nodejs project running with MySQL RDS Database.
+
+Installation Steps are given below
+==================================
+
+Step 1 : First, make sure that terraform is installed.
+Step 2 : Navigate to dev folder 
+Step 3 : Enter required input variables in terraform.tfvars file.
+Step 4 : Run "terrafrom init"
+Step 5 : Run "terrafrom plan -out=tfplan"
+Step 6 : Run terrafrom apply "tfplan"
+
+Please make sure that all componenets are created. Now you are able to access the below url
+
+http://<AWS ELB DNS name>/devices
+
+Records can be updated , deleted and added using PUT/DELETE/POST methods.
+
+ 

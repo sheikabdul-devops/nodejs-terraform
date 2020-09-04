@@ -1,0 +1,17 @@
+variable "access_key" {}
+variable "secret_key" {}
+variable "region" {}
+variable "vpc_cidr" {}
+variable "main_subnet" {}
+variable "second_subnet" {}
+variable "terraform_ip" {}
+variable "db_instance_type" {}
+variable "db_user" {}
+variable "db_pass" {}
+variable "key_name" {}
+variable "key_path" {}
+variable "ssh_user" {}
+variable "source_code_dir" {}
+variable "dest_dir" {}
+variable "ec2_instance_type" {}
+variable "instance_count" {}
