@@ -1,6 +1,8 @@
 #! /bin/bash
 
 dest=$4
+dbuser=$2
+dbpass=$3
 
 cd $dest/scripts
 
@@ -8,11 +10,11 @@ tar xzvf myapp.tar.gz
 
 cd $dest/scripts/myfirstapp/
 
-sed -i '/RDS_HOSTNAME/d' $dest/scripts/myfirstapp/.env
-
 endpoint=`echo $1 | cut -d ':' -f 1`
 
 echo "RDS_HOSTNAME=$endpoint" >> $dest/scripts/myfirstapp/.env
+echo "RDS_USERNAME=$dbuser" >> $dest/scripts/myfirstapp/.env
+echo "RDS_PASSWORD=$dbpass" >> $dest/scripts/myfirstapp/.env
 
 /usr/bin/mysql --host=$endpoint --user=$2 --password=$3 << EOF
 USE innodb;
